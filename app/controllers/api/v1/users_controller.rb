@@ -25,5 +25,6 @@ class Api::V1::UsersController < ApplicationController
     end
 
     #do we need index? prolly not
+    
 
 end
