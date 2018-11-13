@@ -494,3 +494,226 @@ Processing by Api::V1::CommentsController#show as HTML
 Completed 200 OK in 128ms (Views: 60.8ms | ActiveRecord: 28.9ms)
 
 
+  [1m[35m (412.9ms)[0m  [1m[35mCREATE DATABASE "chillax_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (327.2ms)[0m  [1m[35mCREATE DATABASE "chillax_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (17.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (4.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4311843638578235760)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20181112141535)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (8.5ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying, "name" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20181112141535_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (3.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20181112141535"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateDestinations (20181112145258)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (5.6ms)[0m  [1m[35mCREATE TABLE "destinations" ("id" bigserial primary key, "title" character varying, "content" text, "price" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20181112145258_create_destinations.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20181112145258"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateUserDestinations (20181112145347)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (3.0ms)[0m  [1m[35mCREATE TABLE "user_destinations" ("id" bigserial primary key, "destination_id" integer, "user_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20181112145347_create_user_destinations.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20181112145347"]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateComments (20181112145450)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (4.3ms)[0m  [1m[35mCREATE TABLE "comments" ("id" bigserial primary key, "content" text, "user_id" integer, "destination_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20181112145450_create_comments.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20181112145450"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreatePictures (20181112145555)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (3.9ms)[0m  [1m[35mCREATE TABLE "pictures" ("id" bigserial primary key, "destination_id" integer, "picture_url" character varying, "title" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20181112145555_create_pictures.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20181112145555"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateMonths (20181112145609)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (4.7ms)[0m  [1m[35mCREATE TABLE "months" ("id" bigserial primary key, "name" character varying, "destination_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20181112145609_create_months.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20181112145609"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (1.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-11-13 15:19:51.441130"], ["updated_at", "2018-11-13 15:19:51.441130"]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(4311843638578235760)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mDestination Create (1.2ms)[0m  [1m[32mINSERT INTO "destinations" ("title", "content", "price", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Destination 1"], ["content", "lorem ipsum dolor sit amet"], ["price", 1200], ["created_at", "2018-11-13 15:19:57.186821"], ["updated_at", "2018-11-13 15:19:57.186821"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDestination Create (0.3ms)[0m  [1m[32mINSERT INTO "destinations" ("title", "content", "price", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Destination 2"], ["content", "lorem ipsum dolor sit amet"], ["price", 1300], ["created_at", "2018-11-13 15:19:57.190694"], ["updated_at", "2018-11-13 15:19:57.190694"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mDestination Create (0.4ms)[0m  [1m[32mINSERT INTO "destinations" ("title", "content", "price", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Destination 3"], ["content", "lorem ipsum dolor sit amet"], ["price", 1400], ["created_at", "2018-11-13 15:19:57.192954"], ["updated_at", "2018-11-13 15:19:57.192954"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mDestination Create (0.3ms)[0m  [1m[32mINSERT INTO "destinations" ("title", "content", "price", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Destination 4"], ["content", "lorem ipsum dolor sit amet"], ["price", 1500], ["created_at", "2018-11-13 15:19:57.195572"], ["updated_at", "2018-11-13 15:19:57.195572"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mDestination Create (0.3ms)[0m  [1m[32mINSERT INTO "destinations" ("title", "content", "price", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Destination 5"], ["content", "lorem ipsum dolor sit amet"], ["price", 1600], ["created_at", "2018-11-13 15:19:57.198228"], ["updated_at", "2018-11-13 15:19:57.198228"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mDestination Load (0.7ms)[0m  [1m[34mSELECT  "destinations".* FROM "destinations" WHERE "destinations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:16
+  [1m[36mPicture Create (0.7ms)[0m  [1m[32mINSERT INTO "pictures" ("destination_id", "picture_url", "title", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["destination_id", 1], ["picture_url", "https://cdn.pixabay.com/photo/2017/06/19/16/19/portugal-2419987_960_720.jpg"], ["title", "crispy Pic"], ["created_at", "2018-11-13 15:19:57.241048"], ["updated_at", "2018-11-13 15:19:57.241048"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mDestination Load (0.3ms)[0m  [1m[34mSELECT  "destinations".* FROM "destinations" WHERE "destinations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:17
+  [1m[36mPicture Create (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("destination_id", "picture_url", "title", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["destination_id", 1], ["picture_url", "https://images.unsplash.com/photo-1530622044064-d99fa23c9bf3?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=da1e24664ce66c563ce50a421174d8d5&auto=format&fit=crop&w=1050&q=80"], ["title", "crispy Pic"], ["created_at", "2018-11-13 15:19:57.245537"], ["updated_at", "2018-11-13 15:19:57.245537"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:18
+  [1m[36mDestination Load (0.7ms)[0m  [1m[34mSELECT  "destinations".* FROM "destinations" WHERE "destinations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:18
+  [1m[36mPicture Create (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("destination_id", "picture_url", "title", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["destination_id", 1], ["picture_url", "https://cdn.pixabay.com/photo/2017/01/19/07/11/fish-1991678_960_720.jpg"], ["title", "crispy Pic"], ["created_at", "2018-11-13 15:19:57.249491"], ["updated_at", "2018-11-13 15:19:57.249491"]]
+  ↳ db/seeds.rb:18
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mDestination Load (0.3ms)[0m  [1m[34mSELECT  "destinations".* FROM "destinations" WHERE "destinations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:19
+  [1m[36mPicture Create (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("destination_id", "picture_url", "title", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["destination_id", 1], ["picture_url", "https://cdn.pixabay.com/photo/2017/06/02/18/20/dubai-2367021_960_720.jpg"], ["title", "crispy Pic"], ["created_at", "2018-11-13 15:19:57.253000"], ["updated_at", "2018-11-13 15:19:57.253000"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:20
+  [1m[36mDestination Load (0.3ms)[0m  [1m[34mSELECT  "destinations".* FROM "destinations" WHERE "destinations"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:20
+  [1m[36mPicture Create (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("destination_id", "picture_url", "title", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["destination_id", 3], ["picture_url", "https://cdn.pixabay.com/photo/2014/12/23/11/03/malta-valley-578207_960_720.jpg"], ["title", "crispy Pic"], ["created_at", "2018-11-13 15:19:57.256616"], ["updated_at", "2018-11-13 15:19:57.256616"]]
+  ↳ db/seeds.rb:20
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[36mDestination Load (0.3ms)[0m  [1m[34mSELECT  "destinations".* FROM "destinations" WHERE "destinations"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:21
+  [1m[36mPicture Create (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("destination_id", "picture_url", "title", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["destination_id", 2], ["picture_url", "https://cdn.pixabay.com/photo/2015/02/12/18/32/hurghada-634054_960_720.jpg"], ["title", "crispy Pic"], ["created_at", "2018-11-13 15:19:57.260006"], ["updated_at", "2018-11-13 15:19:57.260006"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:22
+  [1m[36mDestination Load (0.2ms)[0m  [1m[34mSELECT  "destinations".* FROM "destinations" WHERE "destinations"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mPicture Create (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("destination_id", "picture_url", "title", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["destination_id", 4], ["picture_url", "https://cdn.pixabay.com/photo/2017/01/26/01/13/malta-2009526_960_720.jpg"], ["title", "crispy Pic"], ["created_at", "2018-11-13 15:19:57.263471"], ["updated_at", "2018-11-13 15:19:57.263471"]]
+  ↳ db/seeds.rb:22
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mDestination Load (0.2ms)[0m  [1m[34mSELECT  "destinations".* FROM "destinations" WHERE "destinations"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mPicture Create (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("destination_id", "picture_url", "title", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["destination_id", 5], ["picture_url", "https://cdn.pixabay.com/photo/2014/09/07/14/52/ibiza-437876_960_720.jpg"], ["title", "crispy Pic"], ["created_at", "2018-11-13 15:19:57.266662"], ["updated_at", "2018-11-13 15:19:57.266662"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:26
+  [1m[36mDestination Load (0.2ms)[0m  [1m[34mSELECT  "destinations".* FROM "destinations" WHERE "destinations"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:26
+  [1m[36mMonth Create (1.2ms)[0m  [1m[32mINSERT INTO "months" ("name", "destination_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "September, October"], ["destination_id", 2], ["created_at", "2018-11-13 15:19:57.283093"], ["updated_at", "2018-11-13 15:19:57.283093"]]
+  ↳ db/seeds.rb:26
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:26
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mDestination Load (0.2ms)[0m  [1m[34mSELECT  "destinations".* FROM "destinations" WHERE "destinations"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:27
+  [1m[36mMonth Create (0.3ms)[0m  [1m[32mINSERT INTO "months" ("name", "destination_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "September, October, November"], ["destination_id", 3], ["created_at", "2018-11-13 15:19:57.287296"], ["updated_at", "2018-11-13 15:19:57.287296"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:28
+  [1m[36mDestination Load (0.2ms)[0m  [1m[34mSELECT  "destinations".* FROM "destinations" WHERE "destinations"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:28
+  [1m[36mMonth Create (0.3ms)[0m  [1m[32mINSERT INTO "months" ("name", "destination_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "September, October, November, December"], ["destination_id", 4], ["created_at", "2018-11-13 15:19:57.290305"], ["updated_at", "2018-11-13 15:19:57.290305"]]
+  ↳ db/seeds.rb:28
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:28
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:29
+  [1m[36mDestination Load (0.2ms)[0m  [1m[34mSELECT  "destinations".* FROM "destinations" WHERE "destinations"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ db/seeds.rb:29
+  [1m[36mMonth Create (0.3ms)[0m  [1m[32mINSERT INTO "months" ("name", "destination_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "September, October, November, December, May"], ["destination_id", 5], ["created_at", "2018-11-13 15:19:57.293035"], ["updated_at", "2018-11-13 15:19:57.293035"]]
+  ↳ db/seeds.rb:29
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:29
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:30
+  [1m[36mDestination Load (0.2ms)[0m  [1m[34mSELECT  "destinations".* FROM "destinations" WHERE "destinations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:30
+  [1m[36mMonth Create (0.3ms)[0m  [1m[32mINSERT INTO "months" ("name", "destination_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "September, October, November, December, May, July"], ["destination_id", 1], ["created_at", "2018-11-13 15:19:57.295680"], ["updated_at", "2018-11-13 15:19:57.295680"]]
+  ↳ db/seeds.rb:30
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:30
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:32
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("email", "name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "bob"], ["name", "bob"], ["created_at", "2018-11-13 15:19:57.312230"], ["updated_at", "2018-11-13 15:19:57.312230"]]
+  ↳ db/seeds.rb:32
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:32
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mDestination Load (0.7ms)[0m  [1m[34mSELECT  "destinations".* FROM "destinations" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mDestination Load (0.5ms)[0m  [1m[34mSELECT  "destinations".* FROM "destinations" WHERE "destinations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
