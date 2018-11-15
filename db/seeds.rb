@@ -30,3 +30,5 @@ Month.create(destination_id: 5, name: "September, October, November, December, M
 Month.create(destination_id: 1, name: "September, October, November, December, May, July")
 
 User.create(name: "bob", email: "bob")
+User.create(name: "dina", email: "dina")
+User.create(name: "ed", email: "ed")
