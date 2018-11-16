@@ -113,15 +113,15 @@ Destination.create(title: "Varna", content: "The coastal region of Varna experie
 
 # Algarve
 
-Picture.create(destination_id: 1, picture_url: "https://images.unsplash.com/photo-1531659303645-d36662658930?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=cd4470a1dfb47efd7f9fc7c25d99d3bd&auto=format&fit=crop&w=632&q=80", title: "crispy Pic")
 Picture.create(destination_id: 1, picture_url: "https://cdn.pixabay.com/photo/2017/12/20/10/48/portugal-3029665_960_720.jpg", title: "crispy Pic")
+Picture.create(destination_id: 1, picture_url: "https://images.unsplash.com/photo-1531659303645-d36662658930?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=cd4470a1dfb47efd7f9fc7c25d99d3bd&auto=format&fit=crop&w=632&q=80", title: "crispy Pic")
 Picture.create(destination_id: 1, picture_url: "https://cdn.pixabay.com/photo/2017/06/19/16/19/portugal-2419987_960_720.jpg", title: "crispy Pic")
 Picture.create(destination_id: 1, picture_url: "https://cdn.pixabay.com/photo/2015/09/23/14/02/ferragudo-953788_960_720.jpg", title: "crispy Pic")
 
 # Antalya
 
-Picture.create(destination_id: 2, picture_url: "https://cdn.pixabay.com/photo/2013/11/26/14/45/antalya-218626_960_720.jpg", title: "crispy Pic")
 Picture.create(destination_id: 2, picture_url: "https://cdn.pixabay.com/photo/2013/05/31/18/30/alanya-115054_960_720.jpg", title: "crispy Pic")
+Picture.create(destination_id: 2, picture_url: "https://cdn.pixabay.com/photo/2013/11/26/14/45/antalya-218626_960_720.jpg", title: "crispy Pic")
 Picture.create(destination_id: 2, picture_url: "https://images.unsplash.com/photo-1530622044064-d99fa23c9bf3?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=da1e24664ce66c563ce50a421174d8d5&auto=format&fit=crop&w=1050&q=80", title: "crispy Pic")
 Picture.create(destination_id: 2, picture_url: "https://cdn.pixabay.com/photo/2018/05/09/23/59/sunset-3386527_960_720.jpg", title: "crispy Pic")
 Picture.create(destination_id: 2, picture_url: "https://cdn.pixabay.com/photo/2013/01/05/13/39/upper-duden-waterfall-73891_960_720.jpg", title: "crispy Pic")
@@ -143,11 +143,11 @@ Picture.create(destination_id: 4, picture_url: "https://cdn.pixabay.com/photo/20
 
 # Costa Brava
 
+Picture.create(destination_id: 5, picture_url: "https://cdn.pixabay.com/photo/2015/06/22/22/43/calella-818129_960_720.jpg", title: "crispy Pic")
 Picture.create(destination_id: 5, picture_url: "https://cdn.pixabay.com/photo/2017/06/04/00/41/sant-joan-2370100_960_720.jpg", title: "crispy Pic")
 Picture.create(destination_id: 5, picture_url: "https://cdn.pixabay.com/photo/2015/10/21/19/46/costa-brava-1000289_960_720.jpg", title: "crispy Pic")
 Picture.create(destination_id: 5, picture_url: "https://cdn.pixabay.com/photo/2013/11/22/16/50/spain-215759_960_720.jpg", title: "crispy Pic")
 Picture.create(destination_id: 5, picture_url: "https://cdn.pixabay.com/photo/2017/07/01/13/27/spain-2461485_960_720.jpg", title: "crispy Pic")
-Picture.create(destination_id: 5, picture_url: "https://cdn.pixabay.com/photo/2015/06/22/22/43/calella-818129_960_720.jpg", title: "crispy Pic")
 Picture.create(destination_id: 5, picture_url: "https://cdn.pixabay.com/photo/2018/04/19/15/39/house-3333461_960_720.jpg", title: "crispy Pic")
 
 # Crete
@@ -169,9 +169,8 @@ Picture.create(destination_id: 7, picture_url: "https://cdn.pixabay.com/photo/20
 Picture.create(destination_id: 7, picture_url: "https://cdn.pixabay.com/photo/2017/04/02/17/17/burj-2196344_960_720.jpg", title: "crispy Pic")
 
 # Ibiza
-
-Picture.create(destination_id: 8, picture_url: "https://images.unsplash.com/photo-1529604971605-bb3189be64fb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7916bbaa26ae30d00b0d20568d3688c3&auto=format&fit=crop&w=686&q=80", title: "crispy Pic")
 Picture.create(destination_id: 8, picture_url: "https://images.unsplash.com/photo-1540544660406-6a69dacb2804?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=dcbd4e474bf4a78b3569ed60b08407ea&auto=format&fit=crop&w=1131&q=80", title: "crispy Pic")
+Picture.create(destination_id: 8, picture_url: "https://images.unsplash.com/photo-1529604971605-bb3189be64fb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7916bbaa26ae30d00b0d20568d3688c3&auto=format&fit=crop&w=686&q=80", title: "crispy Pic")
 Picture.create(destination_id: 8, picture_url: "https://cdn.pixabay.com/photo/2015/07/02/11/07/ibiza-829019_960_720.jpg", title: "crispy Pic")
 Picture.create(destination_id: 8, picture_url: "https://cdn.pixabay.com/photo/2015/06/24/14/05/ibiza-820103_960_720.jpg", title: "crispy Pic")
 Picture.create(destination_id: 8, picture_url: "https://cdn.pixabay.com/photo/2017/03/19/08/26/caves-2155824_960_720.jpg", title: "crispy Pic")
@@ -179,9 +178,9 @@ Picture.create(destination_id: 8, picture_url: "https://cdn.pixabay.com/photo/20
 
 # malta
 
+Picture.create(destination_id: 9, picture_url: "https://cdn.pixabay.com/photo/2017/03/21/01/04/sunrise-2160776_960_720.jpg", title: "crispy Pic")
 Picture.create(destination_id: 9, picture_url: "https://cdn.pixabay.com/photo/2014/03/21/16/55/malta-292181_960_720.jpg", title: "crispy Pic")
 Picture.create(destination_id: 9, picture_url: "https://cdn.pixabay.com/photo/2014/03/01/05/43/azure-window-277351_960_720.jpg", title: "crispy Pic")
-Picture.create(destination_id: 9, picture_url: "https://cdn.pixabay.com/photo/2017/03/21/01/04/sunrise-2160776_960_720.jpg", title: "crispy Pic")
 Picture.create(destination_id: 9, picture_url: "https://cdn.pixabay.com/photo/2017/01/26/01/13/malta-2009526_960_720.jpg", title: "crispy Pic")
 Picture.create(destination_id: 9, picture_url: "https://cdn.pixabay.com/photo/2014/12/23/11/03/malta-valley-578207_960_720.jpg", title: "crispy Pic")
 Picture.create(destination_id: 9, picture_url: "https://images.unsplash.com/photo-1512679186997-081a6da4e083?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=aaece2c0cdbacf3f1c5804584653841d&auto=format&fit=crop&w=1068&q=80", title: "crispy Pic")
@@ -206,11 +205,10 @@ Picture.create(destination_id: 11, picture_url: "https://cdn.pixabay.com/photo/2
 
 # Gran Canaria
 
-
+Picture.create(destination_id: 12, picture_url: "https://cdn.pixabay.com/photo/2017/06/16/17/45/gran-canaria-2409761_1280.jpg", title: "crispy Pic")
 Picture.create(destination_id: 12, picture_url: "https://cdn.pixabay.com/photo/2014/01/26/12/54/gran-canaria-252117_1280.jpg", title: "crispy Pic")
 Picture.create(destination_id: 12, picture_url: "https://cdn.pixabay.com/photo/2015/11/02/23/06/las-palmas-1019265_1280.jpg", title: "crispy Pic")
 Picture.create(destination_id: 12, picture_url: "https://cdn.pixabay.com/photo/2016/05/26/11/37/nature-1416949_1280.jpg", title: "crispy Pic")
-Picture.create(destination_id: 12, picture_url: "https://cdn.pixabay.com/photo/2017/06/16/17/45/gran-canaria-2409761_1280.jpg", title: "crispy Pic")
 Picture.create(destination_id: 12, picture_url: "https://cdn.pixabay.com/photo/2017/07/27/20/13/aguimes-2546608_1280.jpg", title: "crispy Pic")
 
 # lanzarote
@@ -222,11 +220,10 @@ Picture.create(destination_id: 13, picture_url: "https://cdn.pixabay.com/photo/2
 Picture.create(destination_id: 13, picture_url: "https://cdn.pixabay.com/photo/2017/06/21/22/40/playa-de-las-cucharas-2428920_1280.jpg", title: "crispy Pic")
 
 # larnaca
-
+Picture.create(destination_id: 14, picture_url: "https://cdn.pixabay.com/photo/2018/02/14/09/37/cyprus-3152489_1280.jpg", title: "crispy Pic")
 Picture.create(destination_id: 14, picture_url: "https://cdn.pixabay.com/photo/2018/03/11/21/48/cyprus-3218136_1280.jpg", title: "crispy Pic")
 Picture.create(destination_id: 14, picture_url: "https://cdn.pixabay.com/photo/2016/10/09/10/30/cyprus-1725485_1280.jpg", title: "crispy Pic")
 Picture.create(destination_id: 14, picture_url: "https://cdn.pixabay.com/photo/2018/05/28/19/36/boat-3436889_1280.jpg", title: "crispy Pic")
-Picture.create(destination_id: 14, picture_url: "https://cdn.pixabay.com/photo/2018/02/14/09/37/cyprus-3152489_1280.jpg", title: "crispy Pic")
 Picture.create(destination_id: 14, picture_url: "https://cdn.pixabay.com/photo/2017/03/09/15/17/sea-2129972_1280.jpg", title: "crispy Pic")
 
 # majorca
@@ -273,19 +270,19 @@ Picture.create(destination_id: 19, picture_url: "https://images.unsplash.com/pho
 
 # Costa Rica
 
-Picture.create(destination_id: 20, picture_url: "https://images.unsplash.com/photo-1514888320894-ba01666c212d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=764836a98832892317b7cc7014e5bbe0&auto=format&fit=crop&w=1650&q=80", title: "crispy Pic")
 Picture.create(destination_id: 20, picture_url: "https://images.unsplash.com/photo-1536709017021-ce8f99c17e38?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ab3f80298beb7ff2e3f1cb05a7e388fe&auto=format&fit=crop&w=1336&q=80", title: "crispy Pic")
+Picture.create(destination_id: 20, picture_url: "https://images.unsplash.com/photo-1514888320894-ba01666c212d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=764836a98832892317b7cc7014e5bbe0&auto=format&fit=crop&w=1650&q=80", title: "crispy Pic")
 Picture.create(destination_id: 20, picture_url: "https://images.unsplash.com/photo-1523295973995-bd4218f07a32?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e393f01965f994d2d37d5a1d68a553ee&auto=format&fit=crop&w=1250&q=80", title: "crispy Pic")
 Picture.create(destination_id: 20, picture_url: "https://images.unsplash.com/photo-1471079222144-ee7466f9b7ff?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c38274dc2270ffb76249a9934011b312&auto=format&fit=crop&w=1334&q=80", title: "crispy Pic")
 Picture.create(destination_id: 20, picture_url: "https://cdn.pixabay.com/photo/2017/05/30/04/39/sunset-2355774_1280.jpg", title: "crispy Pic")
 
 # Cuba
 
+Picture.create(destination_id: 21, picture_url: "https://cdn.pixabay.com/photo/2017/01/22/15/11/cuba-1999945_1280.jpg", title: "crispy Pic")
 Picture.create(destination_id: 21, picture_url: "https://cdn.pixabay.com/photo/2016/09/02/08/32/cuba-1638594_1280.jpg", title: "crispy Pic")
 Picture.create(destination_id: 21, picture_url: "https://images.unsplash.com/photo-1503192851959-c6da8ac80cff?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a8c7e98a487b4b5db9f1891c27597a86&auto=format&fit=crop&w=1650&q=80", title: "crispy Pic")
 Picture.create(destination_id: 21, picture_url: "https://images.unsplash.com/photo-1539052846768-df7f61fd253f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=64d034a67ed8a008e3f0bf687a703255&auto=format&fit=crop&w=1650&q=80", title: "crispy Pic")
 Picture.create(destination_id: 21, picture_url: "https://cdn.pixabay.com/photo/2015/12/14/10/26/cuba-1092372_1280.jpg", title: "crispy Pic")
-Picture.create(destination_id: 21, picture_url: "https://cdn.pixabay.com/photo/2017/01/22/15/11/cuba-1999945_1280.jpg", title: "crispy Pic")
 
 # dominican republic
 
@@ -331,10 +328,10 @@ Picture.create(destination_id: 26, picture_url: "https://cdn.pixabay.com/photo/2
 
 # Porto
 
+Picture.create(destination_id: 27, picture_url: "https://images.unsplash.com/photo-1513546578705-6dd0cd5519cb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9cf1fc1407845c3c62c724ebdfac5243&auto=format&fit=crop&w=1650&q=80", title: "crispy Pic")
 Picture.create(destination_id: 27, picture_url: "https://cdn.pixabay.com/photo/2017/01/11/17/51/porto-1972450_1280.jpg", title: "crispy Pic")
 Picture.create(destination_id: 27, picture_url: "https://cdn.pixabay.com/photo/2018/10/20/01/33/porto-3760094_1280.jpg", title: "crispy Pic")
 Picture.create(destination_id: 27, picture_url: "https://cdn.pixabay.com/photo/2016/01/15/22/51/porto-1142597_1280.jpg", title: "crispy Pic")
-Picture.create(destination_id: 27, picture_url: "https://images.unsplash.com/photo-1513546578705-6dd0cd5519cb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9cf1fc1407845c3c62c724ebdfac5243&auto=format&fit=crop&w=1650&q=80", title: "crispy Pic")
 Picture.create(destination_id: 27, picture_url: "https://cdn.pixabay.com/photo/2016/04/24/21/10/portugal-1350648_1280.jpg", title: "crispy Pic")
 
 # phuket
@@ -348,9 +345,9 @@ Picture.create(destination_id: 28, picture_url: "https://cdn.pixabay.com/photo/2
 
 # Varna
 
+Picture.create(destination_id: 29, picture_url: "https://cdn.pixabay.com/photo/2018/09/07/00/07/the-black-sea-3659661_1280.jpg", title: "crispy Pic")
 Picture.create(destination_id: 29, picture_url: "https://cdn.pixabay.com/photo/2017/03/01/14/23/varna-2108611_1280.jpg", title: "crispy Pic")
 Picture.create(destination_id: 29, picture_url: "https://cdn.pixabay.com/photo/2016/06/12/11/32/cyprus-1451924_1280.jpg", title: "crispy Pic")
-Picture.create(destination_id: 29, picture_url: "https://cdn.pixabay.com/photo/2018/09/07/00/07/the-black-sea-3659661_1280.jpg", title: "crispy Pic")
 Picture.create(destination_id: 29, picture_url: "https://cdn.pixabay.com/photo/2017/09/22/22/45/beach-2777384_1280.jpg", title: "crispy Pic")
 Picture.create(destination_id: 29, picture_url: "https://cdn.pixabay.com/photo/2016/12/11/09/02/sea-1898997_1280.jpg", title: "crispy Pic")
 #
